@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
     <title>Brent Moelleken - Santa Barbara Plastic Surgeon</title>
     <meta name="description" content="Brent Moelleken - Board-Certified Plastic Surgeon in Santa Barbara. Call (805) 979-2535 for your consultation.">
+    <meta name="keywords" content="plastic surgeon Santa Barbara, Santa Barbara plastic surgery, facelift Santa Barbara, tummy tuck Santa Barbara, Dr. Brent Moelleken">
+    <meta name="author" content="Dr. Brent Moelleken">
+    <link rel="canonical" href="https://dr-brent-call-lps-sb.vercel.app/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dr-brent-call-lps-sb.vercel.app/">
+    <meta property="og:title" content="Brent Moelleken - Santa Barbara Plastic Surgeon">
+    <meta property="og:description" content="Board-Certified Plastic Surgeon in Santa Barbara. Call (805) 979-2535 for your consultation.">
+    <meta property="og:image" content="https://www.brentmoelleken.com/wp-content/uploads/2024/05/Dr-brent.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dr-brent-call-lps-sb.vercel.app/">
+    <meta property="twitter:title" content="Brent Moelleken - Santa Barbara Plastic Surgeon">
+    <meta property="twitter:description" content="Board-Certified Plastic Surgeon in Santa Barbara. Call (805) 979-2535 for your consultation.">
+    <meta property="twitter:image" content="https://www.brentmoelleken.com/wp-content/uploads/2024/05/Dr-brent.png">
     
     <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
     <link href='https://fonts.googleapis.com' crossorigin rel='preconnect' />
@@ -204,12 +221,20 @@
         }
         
         .university-logos {
-            margin-top: 40px;
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
         }
         
         .university-logos img {
             max-width: 100%;
             height: auto;
+            max-height: 45px;
+            flex: 0 0 auto;
+            opacity: 0.7;
         }
         
         .hero-right {
@@ -298,11 +323,149 @@
         
         .awards-logos {
             margin-top: 50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         
         .awards-logos img {
             max-width: 100%;
             height: auto;
+        }
+        
+        /* Before and After Section */
+        .before-after-section {
+            padding: 80px 0;
+            background: var(--base-3);
+            text-align: center;
+        }
+        
+        .before-after-section h2 {
+            margin-bottom: 15px;
+            color: var(--contrast);
+        }
+        
+        .before-after-section h3 {
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 50px;
+            color: var(--contrast-2);
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        .before-after-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        .before-after-item {
+            width: 100%;
+        }
+        
+        .before-after-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 3px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        /* Reviews Section */
+        .reviews-section {
+            padding: 80px 0;
+            background: var(--base-3);
+            text-align: center;
+            display: block;
+            visibility: visible;
+            min-height: 500px;
+        }
+        
+        .reviews-section h2 {
+            margin-bottom: 15px;
+            color: var(--contrast);
+            display: block;
+        }
+        
+        .reviews-section .reviews-subtitle {
+            font-size: 20px;
+            color: var(--contrast-2);
+            margin-bottom: 50px;
+            font-weight: 300;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            visibility: visible;
+        }
+        
+        .review-item {
+            background: var(--base-2);
+            padding: 40px;
+            border-radius: 3px;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        
+        .review-item:nth-child(odd) {
+            background: #eee;
+        }
+        
+        .review-item h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--contrast);
+            margin-bottom: 15px;
+            line-height: 1.3;
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+        }
+        
+        .review-stars {
+            margin-bottom: 20px;
+        }
+        
+        .review-stars img {
+            width: 129px;
+            height: 26px;
+            display: block;
+        }
+        
+        .review-date {
+            font-size: 16px;
+            color: var(--contrast-2);
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        
+        .review-item p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--contrast);
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        
+        .review-author {
+            font-size: 16px;
+            color: var(--contrast);
+            font-weight: 500;
+            margin-top: 20px;
+        }
+        
+        .review-author strong {
+            font-weight: 600;
         }
         
         /* Team Section */
@@ -590,6 +753,47 @@
             .grid-container {
                 padding: 0 30px;
             }
+            
+            .university-logos {
+                gap: 30px;
+                margin-top: 20px;
+            }
+            
+            .university-logos img {
+                max-height: 35px;
+                opacity: 0.6;
+            }
+            
+            .before-after-gallery {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                padding: 0 30px;
+            }
+            
+            .before-after-section h2 {
+                font-size: 48px;
+                margin-bottom: 10px;
+            }
+            
+            .before-after-section h3 {
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+            
+            .reviews-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+                padding: 0 30px;
+            }
+            
+            .reviews-section {
+                padding: 60px 0;
+            }
+            
+            .reviews-section .reviews-subtitle {
+                font-size: 18px;
+                margin-bottom: 40px;
+            }
         }
         
         @media (max-width: 768px) {
@@ -810,6 +1014,77 @@
             .footer-social h2 {
                 font-size: 40px;
             }
+            
+            .university-logos {
+                gap: 20px;
+                margin-top: 15px;
+            }
+            
+            .university-logos img {
+                max-height: 30px;
+                opacity: 0.5;
+            }
+            
+            @media (max-width: 480px) {
+                .university-logos {
+                    display: none;
+                }
+            }
+            
+            .before-after-gallery {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 0 20px;
+            }
+            
+            .before-after-section {
+                padding: 50px 0;
+            }
+            
+            .before-after-section h2 {
+                font-size: 40px;
+            }
+            
+            .before-after-section h3 {
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+            
+            .reviews-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                padding: 0 20px;
+            }
+            
+            .reviews-section {
+                padding: 50px 0;
+            }
+            
+            .reviews-section h2 {
+                font-size: 40px;
+            }
+            
+            .reviews-section .reviews-subtitle {
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+            
+            .review-item {
+                padding: 30px 20px;
+            }
+            
+            .review-item h3 {
+                font-size: 20px;
+            }
+            
+            .review-item p {
+                font-size: 16px;
+            }
+            
+            .review-stars img {
+                width: 100px;
+                height: 20px;
+            }
         }
         
         @media (max-width: 480px) {
@@ -965,7 +1240,8 @@
                     Signature Trademarked Techniques
                 </div>
                 <div class="university-logos">
-                    <img src="https://www.brentmoelleken.com/wp-content/uploads/2024/05/University-logos-1.png" alt="University logos" />
+                    <img src="https://www.drbrent.com/wp-content/uploads/University-logos_06.jpg" alt="Harvard University" />
+                    <img src="https://www.drbrent.com/wp-content/uploads/University-logos_08.jpg" alt="Yale University" />
                 </div>
             </div>
             <div class="hero-right">
@@ -1090,6 +1366,108 @@
         </div>
     </section>
 
+    <!-- Before and After Section 1 -->
+    <section class="before-after-section">
+        <div class="grid-container">
+            <h2>See Our Work</h2>
+            <h3>Before and After Photos</h3>
+            <div class="before-after-gallery">
+                <div class="before-after-item">
+                    <img src="https://www.drbrent.com/wp-content/uploads/Mask-group-4.jpg" alt="Before and After Result 1" />
+                </div>
+                <div class="before-after-item">
+                    <img src="https://www.drbrent.com/wp-content/uploads/Mask-group-5.jpg" alt="Before and After Result 2" />
+                </div>
+                <div class="before-after-item">
+                    <img src="https://www.drbrent.com/wp-content/uploads/Mask-group-5.jpg" alt="Before and After Result 3" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before and After Section 2 -->
+    <section class="before-after-section" style="background: var(--base-2);">
+        <div class="grid-container">
+            <h2>See Our Work</h2>
+            <h3>Before and After Photos</h3>
+            <div class="before-after-gallery">
+                <div class="before-after-item">
+                    <img src="https://www.drbrent.com/wp-content/uploads/Mask-group-2-2.jpg" alt="Before and After Result 4" />
+                </div>
+                <div class="before-after-item">
+                    <img src="https://www.drbrent.com/wp-content/uploads/Mask-group-4-1.jpg" alt="Before and After Result 5" />
+                </div>
+                <div class="before-after-item">
+                    <img src="https://www.drbrent.com/wp-content/uploads/Mask-group-3-1.jpg" alt="Before and After Result 6" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="grid-container">
+            <h2>Hear from Our Patients</h2>
+            <p class="reviews-subtitle">See what our clients have to say about their experience with Dr. Brent and the office, for both surgery and non-surgical options:</p>
+            <div class="reviews-grid">
+                <div class="review-item">
+                    <h3>My Experience ... Was The Absolute Best Possible</h3>
+                    <div class="review-stars">
+                        <img src="https://www.drbrent.com/wp-content/uploads/5-stars-6.png" alt="5 stars" />
+                    </div>
+                    <div class="review-date">– Written on October 24, 2016</div>
+                    <p>My experience with Dr. Moelleken and his staff was the absolute best possible. Dr. was very interested in his patient as were his staff. Making you comfortable and secure in the knowledge of his skills, which are the best. No problems. No looking "done" just better. Thank you.</p>
+                    <div class="review-author">by <strong>SG</strong></div>
+                </div>
+                <div class="review-item">
+                    <h3>I Look About 10 Years Younger and About 20 Pounds Thinner</h3>
+                    <div class="review-stars">
+                        <img src="https://www.drbrent.com/wp-content/uploads/5-stars-6.png" alt="5 stars" />
+                    </div>
+                    <div class="review-date">– Written on September 7, 2016</div>
+                    <p>Dr. Moelleken and his staff were wonderful from start to finish. I am 51 years old. I had a face lift, my upper lids done, LiveFill®, chin implant and a necklace. Prior to surgery I was very self conscious about my jowls and neck. Dr. Moelleken did an incredible job! I look about 10 years younger and about 20 pounds thinner. It has been three months since my surgery and I couldn't be happier. I highly recommend Dr. Moelleken, it has been worth it.</p>
+                    <div class="review-author">by <strong>JM</strong></div>
+                </div>
+                <div class="review-item">
+                    <h3>The Grade Would Be A+++++</h3>
+                    <div class="review-stars">
+                        <img src="https://www.drbrent.com/wp-content/uploads/5-stars-6.png" alt="5 stars" />
+                    </div>
+                    <div class="review-date">– Written on August 11, 2016</div>
+                    <p>The dr. and his staff were great! I can't say enough about them. The dr. is very honest and upfront on what to expect. I am very happy with the results, I am a new man. I used to lower my neck and see fat rolls coming out of each side of my neck and bottom chin. One week later I did it and the neck didn't even bulge out slightly. Additionally removed abnormal bulges that occurred due to facial trauma and are now gone. The grade would be A+++++.</p>
+                    <div class="review-author">by <strong>RC</strong></div>
+                </div>
+                <div class="review-item">
+                    <h3>I Could Not Be More Thrilled With The Results!</h3>
+                    <div class="review-stars">
+                        <img src="https://www.drbrent.com/wp-content/uploads/5-stars-6.png" alt="5 stars" />
+                    </div>
+                    <div class="review-date">– Written on July 20, 2016</div>
+                    <p>Dr. Moelleken and all his staff were so sweet and accommodating when it came to all my needs. Dr. Moelleken was quick to return phone calls if there were any concerns or questions. After having three children I had so much extra skin, I decided to have a full abdominoplasty and breast lift with the removal of breast implants. I could not be more thrilled with the results! I have such high regard and trust in Dr. Moelleken and all his staff that I would send anyone to him with complete confidence.</p>
+                    <div class="review-author">by <strong>JQ</strong></div>
+                </div>
+                <div class="review-item">
+                    <h3>I Highly Recommend The "Hybrid Abdominoplasty"</h3>
+                    <div class="review-stars">
+                        <img src="https://www.drbrent.com/wp-content/uploads/5-stars-6.png" alt="5 stars" />
+                    </div>
+                    <div class="review-date">– Written on June 30, 2016</div>
+                    <p>For years I was searching for a doctor that would fix my stomach without leaving me with a huge hip-to-hip scar. I read an article on Dr. Moelleken's "Hybrid abdominoplasty" and was amazed at the results. After meeting him and understanding the procedure, I knew he was the right doctor and the right procedure for me. He not only impresses me with his incredible background, resume, and knowledge, but he was so down to earth, easy to talk to and a good listener. I was also impressed with his support staff and nurses. They were considerate to my conditions and needs. I highly recommend Dr. Moelleken and his staff. And for anyone who is fit needs a little fixing-up after having kids, I highly recommend the "Hybrid abdominoplasty" that only Dr. Moelleken is presently performing.</p>
+                    <div class="review-author">by <strong>DMG</strong></div>
+                </div>
+                <div class="review-item">
+                    <h3>Can Not Say Enough About This Amazing Surgeon</h3>
+                    <div class="review-stars">
+                        <img src="https://www.drbrent.com/wp-content/uploads/5-stars-6.png" alt="5 stars" />
+                    </div>
+                    <div class="review-date">– Written on April 22, 2016</div>
+                    <p>I had a facelift with Dr. Moelleken 3 years ago and love it! I look completely natural not that pulled monster look that you see so often, I look great. Staff is very supportive both pre-post surgery. Minimal pain 1 day, quick recovery, back to work 10 days later. Can not say enough about this amazing surgeon. Thank you Dr. Moelleken!</p>
+                    <div class="review-author">by <strong>RT</strong></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer Section -->
     <footer class="footer-section">
         <div class="footer-container">
@@ -1145,7 +1523,52 @@
     </script>
 
     <!-- CallRail Dynamic Number Insertion -->
-    <!-- Replace the script src below with your Beverly Hills CallRail dynamic number insertion URL -->
+    <!-- Replace the script src below with your Santa Barbara CallRail dynamic number insertion URL -->
     <script type="text/javascript" src=""></script>
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Dr. Brent Moelleken - Plastic Surgeon",
+        "image": "https://www.brentmoelleken.com/wp-content/uploads/2024/05/Dr-brent.png",
+        "@id": "https://dr-brent-call-lps-sb.vercel.app/",
+        "url": "https://dr-brent-call-lps-sb.vercel.app/",
+        "telephone": "+1-805-979-2535",
+        "priceRange": "$$$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "601 E ARRELLAGA ST #103",
+            "addressLocality": "Santa Barbara",
+            "addressRegion": "CA",
+            "postalCode": "93103",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.4208,
+            "longitude": -119.6982
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "17:00"
+        },
+        "sameAs": [
+            "https://www.instagram.com/brentmoelleken/",
+            "https://www.facebook.com/brentmoelleken/",
+            "https://twitter.com/brentmoelleken"
+        ],
+        "medicalSpecialty": "Plastic Surgery"
+    }
+    </script>
 </body>
 </html>
